@@ -1,0 +1,8 @@
+{
+  "name": "md5",
+  "main": "index.js",
+  "author": "Konrad Pettersson",
+  "dependencies": {
+    "md5": "^2.3.0"
+  }
+}
