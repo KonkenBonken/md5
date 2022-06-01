@@ -7,7 +7,7 @@ if (isMainThread) {
 	const alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
 	let words = alphabet;
 
-	let threadCount = 10;
+	let threadCount = 4;
 	const threads = [];
 	const hashes = [];
 
