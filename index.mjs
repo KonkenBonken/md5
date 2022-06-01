@@ -1,3 +1,4 @@
+console.time('All');
 import md5 from 'md5';
 import fs from 'fs';
 
@@ -10,8 +11,13 @@ for (let i = 1; i < wordLength; i++)
 
 console.log(words.length);
 
+console.time('Hashing');
 for (const i in words)
 	words[i] = md5(words[i]);
+console.timeEnd('Hashing');
 
 
+console.time('Save');
 fs.writeFileSync('hashes.txt', words.join('\n'))
+console.timeEnd('Save');
+console.timeEnd('All');
