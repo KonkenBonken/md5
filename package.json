@@ -1,6 +1,6 @@
 {
   "name": "md5",
-  "main": "index.js",
+  "main": "index.mjs",
   "author": "Konrad Pettersson",
   "dependencies": {
     "md5": "^2.3.0"
