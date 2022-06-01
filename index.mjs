@@ -9,7 +9,7 @@ let words = alphabet;
 for (let i = 1; i < wordLength; i++)
 	words = words.flatMap(word => Array(alphabet.length).fill().map((_, i) => word + alphabet[i]));
 
-console.log(words.length);
+console.log('Words:', words.length);
 
 console.time('Hashing');
 for (const i in words)
